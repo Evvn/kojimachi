@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import loginRoutes from './routes/login';
 import userRoutes from './routes/user';
 import { serverMessage } from './constants';
 
@@ -8,6 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json()); // allow app to parse JSON data from requests
+app.use('/login', loginRoutes);
 app.use('/users', userRoutes);
 
 app.listen(PORT, () => {
