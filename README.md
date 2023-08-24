@@ -47,7 +47,7 @@ To run the application, run `npm start`. This will compile the app code, built t
 
 
 ## Use 🎲
-While the server is running, you can interact with the API. There is a Postman Collection included that has examples of the standard API functions. __Please make sure that you first authenticate and include the JWT as a part of each request.__
+While the server is running, you can interact with the API. There is a Postman Collection included, `/Kojimachi_User_API_test.postman_collection.json`, that has examples of the standard API functions. __Please make sure that you first authenticate and include the JWT as a part of each request.__
 
 The `Authorization` header will need to be set in the Postman requests with the JWT that is generated when you make the `POST` request to `/login`
 
